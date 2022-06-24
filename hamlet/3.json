@@ -1,0 +1,34 @@
+{
+    "width": 7,
+    "height": 4,
+    "top_hints": [
+        "[O-S\\sG-L]+",
+        "[ANTIGE]+",
+        "(S\\s|\\sS|'A)+",
+        "[PI\\sRD]+",
+        "(TD|L|LO|O|OH)+",
+        "[HITE'\\s]+",
+        "[MENDS]+"
+    ],
+    "left_hints": [
+        "[HEL\\s]+P.+",
+        "[MI/SON]+[^OLDE]{4}",
+        "[IN'THE\\.\\s]+",
+        ".[A-G]+(R|D)+[END]+"
+    ],
+    "bottom_hints": [
+        "(\\s\\s|OR|HO|ME)+",
+        "[A-G]N+(GI|IG|PI)",
+        "[RAM\\sES']+",
+        "[^AINED]+",
+        "[HORTED]+",
+        "[F-K]{2}[F-M]..?",
+        "(S|I|MS)[MYEND]*"
+    ],
+    "right_hints": [
+        ".[SEPOLI\\s]+",
+        ".{3,4}(\\sH|\\s|IM)+",
+        "[IT'\\s]{4}[H.TE]+",
+        ".{4}(NI|TE|N|DE)+"
+    ]
+}

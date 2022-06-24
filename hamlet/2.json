@@ -1,0 +1,21 @@
+{
+    "width": 7,
+    "height": 6,
+    "top_hints": [
+        "(T|K)[POE]\\1\\1(B|E|\\s)*",
+        "[PROH]+TS+",
+        "(BY|\\s|K){3}(AH|T|HA)+",
+        "(TEI|PNI|BNB)*",
+        "(\\sO|EO|E\\s)+",
+        "[I,T]{4}(QN|BA)*",
+        "(.)\\1\\1[SUN]*\\1"
+    ],
+    "left_hints": [
+        "[SALT]+O(\\sB|S,|E,)+[F\\s]",
+        "(OR\\s|T\\s|NO)*",
+        ".(L|,|O)[,E\\sB]+",
+        "(TH|IH|T)AT[SI\\s]*",
+        "(\\s|I)?(T|H|F){2}E[QU\\s]{3}",
+        "[^BAKH\\s]+(\\sB|N\\s)"
+    ]
+}
