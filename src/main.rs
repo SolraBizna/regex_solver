@@ -114,7 +114,7 @@ impl Board {
         for y in 0 .. height {
             for x in 0 .. width {
                 let allowed = allowed_char_intersection(&row_allowed_chars[y], &col_allowed_chars[x]);
-                if(allowed.len() == 0) {
+                if allowed.len() == 0 {
                     print!("\x1B[33;7m");
                     board.print_cell(x, y, '0');
                     print!("\x1B[0m");
@@ -214,7 +214,7 @@ impl Board {
             self.maybe_best_choice(&mut best_choice, col_choice);
         }
         if best_choice.is_none() { return false } // No progress is possible.
-        let Choice { x, y, index, is_column, complexity } = best_choice.unwrap();
+        let Choice { x, y, index, is_column, .. } = best_choice.unwrap();
         self.print_cell(x, y, if is_column { '|' } else { '-' });
         // Brute force that cell! Find out all ACTUALLY possible characters!
         let possible = self.allowed_chars(x, y);
